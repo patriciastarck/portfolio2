@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.float {
+   animation: flutuante 5s ease-in-out infinite;
+}
+
+@keyframes flutuante {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px)
+    }
+    
+}

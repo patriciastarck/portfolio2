@@ -1,0 +1,43 @@
+/* @tailwind base;
+@tailwind components; */
+/* @tailwind utilities; */
+
+:root {
+  --cor1: #3a86ff;
+  --cor2: #f5f5f5;
+}
+
+/* .apresentacao {
+  height: calc(100vh - 63px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./img/bg-bluesky.jpg');
+  animation: rotate-bg 60s linear infinite;
+} */
+
+@keyframes rotate-bg {
+  to {
+    background-position: 100%;
+  }
+}
+
+.globo-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: -25px -25px 25px black inset, 10px 30px 20px white inset, 0px 0px 20px var(--cor1);
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./img/globo.jpeg');
+  background-size: cover;
+  animation: rotate-globo 60s linear infinite;
+}
+
+@keyframes rotate-globo {
+  to {
+    background-position: 100%;
+  }
+}
